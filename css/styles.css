@@ -1,0 +1,72 @@
+/* For Smaller Mobiles */
+@media screen and (min-width: 360px) and (max-width: 539px){
+    .home_button, .button {
+        height: 4vh;
+        margin: 4px;
+        font-size: 2vh;
+        }
+    
+        .main_input, .text {
+        margin: 4px;
+        font-size: 2.2vh;
+        }
+}
+
+/* For Mobile */
+@media screen and (min-width: 540px) and (max-width: 683px){
+    .home_button, .button {
+        height: 4vh;
+        margin: 4px;
+        font-size: 2vh;
+        width: 24vh;
+        }
+    
+        .main_input, .text {
+        margin: 4px;
+        font-size: 3vh;
+        }
+}
+
+/* For Tablets */
+@media screen and (min-width: 684px) and (max-width: 908px) {
+    .home_button, .button {
+        height: 4vh;
+        margin: 4px;
+        font-size: 2vh;
+        width: 24vh;
+        }
+    
+        .main_input, .text {
+        margin: 4px;
+        font-size: 3vh;
+        }
+}
+
+@media screen and (min-width: 909px) and (max-width: 1090px) {
+    .home_button, .button {
+        height: 4vh;
+        margin: 4px;
+        font-size: 2vh;
+        width: 29vh;
+        }
+    
+        .main_input, .text {
+        margin: 4px;
+        font-size: 3.5vh;
+        }
+}
+
+@media screen and (min-width: 1091px) {
+    .home_button, .button {
+        height: 4vh;
+        margin: 4px;
+        font-size: 2vh;
+        width: 35vh;
+        }
+    
+        .main_input, .text {
+        margin: 4px;
+        font-size: 4vh;
+        }
+}
+

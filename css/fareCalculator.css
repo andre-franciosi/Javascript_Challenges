@@ -1,0 +1,10 @@
+.checkbox {
+    height: 40px;
+    width: 40px;
+}
+
+.student{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

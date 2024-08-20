@@ -1,0 +1,115 @@
+/* For Smaller Mobiles */
+@media screen and (min-width: 360px) and (max-width: 539px){
+    .main{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    h1, button {
+        font-size: 30px;
+        margin: 4px;
+        font-weight: bold;
+    }
+    
+    button{
+        width: 78vw;
+        height: 12vh
+    }
+}
+
+/* For Mobile */
+@media screen and (min-width: 540px) and (max-width: 683px){
+    .main{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    h1, button {
+        font-size: 30px;
+        margin: 4px;
+        font-weight: bold;
+    }
+    
+    button{
+        width: 80vw;
+        height: 12vh
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 684px) {
+    .main{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    h1, button {
+        font-size: 30px;
+        margin: 4px;
+        font-weight: bold;
+    }
+
+    .grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 41vw 41vw;
+    }
+    
+    button{
+        width: 40vw;
+        height: 14vh
+    }
+}
+
+@media screen and (min-width: 909px) {
+    .main{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    h1, button {
+        font-size: 30px;
+        margin: 4px;
+        font-weight: bold;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 37vw 37vw;
+    }
+    
+    button{
+        width: 36vw;
+        height: 18vh
+    }
+}
+
+@media screen and (min-width: 1091px) {
+    .main{
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    h1, button {
+        font-size: 30px;
+        margin: 4px;
+        font-weight: bold;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 29vw 29vw 29vw;
+    }
+    
+    button{
+        width: 28vw;
+        height: 13vh
+    }
+}
+

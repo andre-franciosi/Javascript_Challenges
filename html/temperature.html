@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Temperatura</title>
+</head>
+<body>
+    <div class="main_div">
+        <a href="../index.html"><button class="home_button">HOME</button></a>
+        <form action="#">
+            <input class="main_input" type="number" placeholder="Digite a temperatura" id="temperatureInput" required>
+        </form>
+        <button class="button" onclick="convertToCelsius()">Converter para Celsius</button>
+        <button class="button" onclick="convertToFahrenheit()">Converter para Fahrenheit</button>
+        <h2 class="text">Temperatura em Celsius: </h2> <h3 class="text" id="vCelsius"></h3>
+        <h2 class="text">Temperatura em Fahrenheit: </h2> <h3 class="text" id="vFahrenheit"></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Filtrando propriedades</title>
+</head>
+<body>
+    <div class="main_div">
+        <a href="../index.html"><button class="home_button">HOME</button></a>
+        <h1 class="text" >Digite as propriedades que deseja filtrar separadas por ','</h1>
+        <h2 class="text">Nome: André Franciosi <br>
+            Idade: 21 <br>
+            Formação: Engenharia da Computação <br> <!-- PT: Eu sei que esse html não está otimizado, mas para um projeto de javascript está bom -->
+            Altura: 181 <br>                        <!-- EN: I know that this HTML is not optmized but for a javascript project is enough -->
+            Github: andre_franciosi <br>
+        </h2>
+        <form action="#">
+            <input class="main_input" type="text" placeholder="Digite as propriedades" id="array" required>
+        </form>
+        <button class="button" onclick="propertiesFilter()">Filtrar</button>
+        <h1 class="text">Resultado</h1>
+        <h2 class="text" id="result">  </h2>
+    </div>
+</body>
+</html>
