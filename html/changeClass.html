@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Alterando CSS</title>
+</head>
+<body>
+    <div class="main_div">
+        <a href="../index.html"><button class="home_button">HOME</button></a>
+        <button class="button" id="buttonAdd" onclick="document.getElementById('result').className = 'changeClass'">Colocar Classe</button>
+        <button class="button" id="buttonRemove" onclick="document.getElementById('result').className = ''">Remover Classe</button>
+        <div id="result" class="">
+            <h1 class="text">Resultado</h1>
+        </div>
+    </div>
+</body>
+</html>
