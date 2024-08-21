@@ -554,3 +554,54 @@ function joiningObjects(){
 
 // --------------------------------------------------------------------------------------
 
+function addingElements(){
+    let text = document.getElementById('text').value
+    const newItem = document.createElement('li')
+    newItem.innerText = text
+    
+    document.getElementById('list').appendChild(newItem).setAttribute('id', 'p1')
+}
+
+function removingElements(){
+    document.getElementById('p1').remove()
+}
+
+// --------------------------------------------------------------------------------------
+
+function filter(){
+    let filter = document.getElementById('filter').value
+
+    const originalArray = Array.from(document.getElementById('list').children)
+
+    const list = [...originalArray];
+    const filteredList = document.createDocumentFragment()
+
+    list.forEach(value => {
+        const itemInList = value.innerText.toLowerCase()
+        const keyword = filter.toLowerCase()
+        if(itemInList.includes(keyword)){
+            filteredList.appendChild(value)
+        }
+    });
+
+    document.getElementById('list').replaceChildren(filteredList)
+}
+
+// --------------------------------------------------------------------------------------
+
+function moveItens(id){
+    let selection = document.getElementById('filter').value.toLowerCase
+    const array = ['Gato', 'Cachorro', 'Rato', 'Cavalo', 'Coelho']
+
+    switch (id){
+        case "select":
+            selection.className = 'changeClass'
+            break
+        case "up":
+            console.log("UP")
+            break
+        case "down":
+            console.log("DOWN")
+            break
+    }
+}
