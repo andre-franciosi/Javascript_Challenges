@@ -590,18 +590,25 @@ function filter(){
 // --------------------------------------------------------------------------------------
 
 function moveItens(id){
-    let selection = document.getElementById('filter').value.toLowerCase
-    const array = ['Gato', 'Cachorro', 'Rato', 'Cavalo', 'Coelho']
+    let selection = document.getElementById('filter').value.toString().toLowerCase()
+    const array = ['gato', 'cachorro', 'rato', 'cavalo', 'coelho']
+    let list = document.querySelector("ul")
 
     switch (id){
         case "select":
-            selection.className = 'changeClass'
+            console.log("SELECT")
+            document.getElementById('p'+array.indexOf(selection)).className = 'changeClass'
             break
         case "up":
             console.log("UP")
+            document.getElementById('p'+array.indexOf(selection)).style.
             break
         case "down":
             console.log("DOWN")
+            break
+        case "deselect":
+            console.log("DESELECT")
+            document.getElementById('p'+array.indexOf(selection)).className = ''
             break
     }
 }

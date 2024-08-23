@@ -2,6 +2,11 @@
     background-color: blueviolet;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+  }
+
 /* For Smaller Mobiles */
 @media screen and (min-width: 360px) and (max-width: 539px){
     .home_button, .button {
