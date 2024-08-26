@@ -592,23 +592,36 @@ function filter(){
 function moveItens(id){
     let selection = document.getElementById('filter').value.toString().toLowerCase()
     const array = ['gato', 'cachorro', 'rato', 'cavalo', 'coelho']
-    let list = document.querySelector("ul")
+    const items = document.querySelectorAll('#list li')
+
+    let selectedItem = null;
+
+    let previousSelection = null
 
     switch (id){
         case "select":
-            console.log("SELECT")
-            document.getElementById('p'+array.indexOf(selection)).className = 'changeClass'
+            selectedItem = selection
+            if (selectedItem != previousSelection) {
+                document.getElementById('p'+array.indexOf(selection)).classList.remove('changeClass')
+            }
+            document.getElementById('p'+array.indexOf(selection)).classList.add('changeClass')
+            console.log('selection')
+            previousSelection = selectedItem
+            selectedItem = null
             break
         case "up":
             console.log("UP")
-            document.getElementById('p'+array.indexOf(selection)).style.
+            if (selectedItem && selectedItem.previousElementSibling) {
+                selectedItem.parentNode.insertBefore(selectedItem, selectedItem.previousElementSibling);
+            }
             break
         case "down":
             console.log("DOWN")
-            break
-        case "deselect":
-            console.log("DESELECT")
-            document.getElementById('p'+array.indexOf(selection)).className = ''
+            if (selectedItem && selectedItem.nextElementSibling) {
+                selectedItem.parentNode.insertBefore(selectedItem.nextElementSibling, selectedItem);
+            }
             break
     }
+
+
 }
